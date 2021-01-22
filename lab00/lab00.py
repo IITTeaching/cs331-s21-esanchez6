@@ -1,6 +1,6 @@
 # Change this function
-def my_palindrome():
-    return ''
+def my_palindrome(x):
+    return x == x[::-1]
 
 # Do not change the main method
 def main():
