@@ -117,6 +117,17 @@ class ArrayList:
         and enclosed by square brackets. E.g., for a list containing values
         1, 2 and 3, returns '[1, 2, 3]'."""
         ### BEGIN SOLUTION
+        turn = '['
+        if len(self) == 0:
+            turn += ']'
+            return turn
+        for i in range(len(self.data)):
+            turn += str(self.data[i])
+            if i == len(self)-1:
+                turn += ']'
+            else:
+                turn += ', '
+        return turn
         ### END SOLUTION
 
     def __repr__(self):
